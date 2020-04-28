@@ -1,3 +1,63 @@
 {
-  "Hello": "Hello"
+  "navbar": {
+    "lang_en": "English",
+    "lang_pl": "Polish",
+    "cta_button": "Preview and download"
+  },
+  "heading": {
+    "figma": "Made for Figma",
+    "primary_title": "Design faster, code easier",
+    "secondary_title": "Prototype quickly and turn mock-ups into a fully functional app with a complex set of UI elements",
+    "docs_button": "Read the docs",
+    "preview_button": "Preview and download"
+  },
+  "profits": {
+    "heading": "What you get?",
+    "components_label": "3600+ Components",
+    "components_description": "Aliquam est dolor, laoreet quis sodales ut, congue at velit. Praesent augue sapien, pellentesque ut lobortis nec, rhoncus vel ante. Curabitur eu dolor in urna ultricies dignissim.",
+    "icons_label": "2400 Material Icons",
+    "icons_description": "Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi non metus tellus. Mauris eget est a enim maximus suscipit. Vivamus placerat ipsum volutpat arcu mollis vehicula fermentum at nisi.",
+    "styles_label": "80 Styles",
+    "styles_description": "Aliquam nec nibh sem. Aliquam sagittis turpis ac tempus pharetra. Nunc egestas dignissim nunc non feugiat. Vestibulum bibendum arcu non lacus sagittis vehicula.",
+    "development_label": "Development Ready",
+    "development_description": "Morbi ac leo metus. In hac habitasse platea dictumst. Aliquam dignissim magna diam, a feugiat augue lobortis a. Maecenas ac enim interdum, pulvinar mi ut, sodales velit.",
+    "modular_label": "Modular",
+    "modular_description": "Quisque pellentesque faucibus dui et bibendum. Cras varius nunc ac ligula consectetur, sed fermentum sapien pharetra. Aliquam porttitor vehicula sapien.",
+    "customizable_label": "Fully Customizable",
+    "customizable_description": "Maecenas porta justo diam, nec finibus eros fermentum eget. Morbi at leo non magna egestas finibus. Sed blandit sollicitudin nibh, ac commodo justo eleifend sed."
+  },
+  "look-inside": {
+    "heading": "Look inside",
+    "guidelines_label": "Guidelines",
+    "guidelines_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras arcu arcu, dignissim quis egestas nec, molestie id diam. Praesent aliquet suscipit nulla sed hendrerit.",
+    "components_label": "Components",
+    "components_content": "Cras purus arcu, ullamcorper at varius eu, dignissim a enim. Sed efficitur ex iaculis vestibulum lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+    "frames_label": "Frames",
+    "frames_content": "Vivamus ornare sodales leo, nec viverra enim sollicitudin ac. Nulla convallis pretium magna, quis eleifend elit convallis at. Curabitur quis nulla ac magna egestas elementum at et enim.",
+    "screens_label": "Screens",
+    "screens_content": "Mauris efficitur convallis massa nec laoreet. Cras facilisis purus at rhoncus consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    "tabs_aria": "content type choice tabs",
+    "go_to": "Go to the",
+    "prev_aria": "previous frame",
+    "next_aria": "next frame",
+    "menu_aria": "mini browser menu"
+  },
+  "footer": {
+    "madeby": "Made with 💙 by"
+  },
+  "contact": {
+    "heading": "Contact us",
+    "question1": "Cannot find the component, you needed?",
+    "question2": "Want to give us some feedback about our work?",
+    "question3": "Found some problem or have an idea for the improvement?",
+    "question4": "Want to ask us some question about the UI Kit?",
+    "form_title": "Use the form below to contact us",
+    "email_field_label": "E-mail address",
+    "message_field_label": "Your message",
+    "submit_text": "Send e-mail",
+    "validation_required": "This field is required",
+    "validation_email": "Incorrect e-mail format",
+    "success_message": "Your message has been submitted",
+    "error_message": "Error during sending your message"
+  }
 }

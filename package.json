@@ -7,8 +7,9 @@
   "dependencies": {
     "@material-ui/core": "^4.9.12",
     "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.51",
     "@material-ui/styles": "^4.9.10",
-    "faker": "^4.1.0",
+    "axios": "^0.19.2",
     "gatsby": "^2.21.0",
     "gatsby-image": "^2.4.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
@@ -26,11 +27,14 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.0.0"
+    "react-helmet": "^6.0.0",
+    "react-hook-form": "^5.6.0",
+    "react-use": "^14.2.0",
+    "yup": "^0.28.4"
   },
   "devDependencies": {
-    "@types/faker": "^4.1.11",
     "@types/react-helmet": "^5.0.15",
+    "@types/yup": "^0.28.0",
     "@typescript-eslint/eslint-plugin": "^2.30.0",
     "@typescript-eslint/parser": "^2.30.0",
     "eslint": "^6.8.0",

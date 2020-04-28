@@ -42,7 +42,6 @@ module.exports = {
         path: `${__dirname}/src/translations`,
         languages: [`en`, `pl`],
         defaultLanguage: `en`,
-        redirect: true,
       },
     },
     {

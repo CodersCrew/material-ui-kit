@@ -4,8 +4,9 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 
-import UIKitLogo from '../images/svg/ui-kit-logo.svg';
+import UIKitLogo from '../images/svg/ui-kit-logo-v.svg';
 import FigmaLogo from '../images/svg/figma-logo.svg';
+import { useTranslation } from '../hooks';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -44,28 +45,29 @@ const useStyles = makeStyles((theme) => ({
 
 const Heading = () => {
   const classes = useStyles();
+  const { t } = useTranslation('heading');
 
   return (
     <div className={classes.root}>
       <Box display="flex" alignItems="center" mt={10} mb={15}>
         <FigmaLogo className={classes.figmaLogo} />
-        <Typography variant="button">Made for Figma</Typography>
+        <Typography variant="button">{t('figma')}</Typography>
       </Box>
       <UIKitLogo className={classes.uiKitLogo} />
       <Box maxWidth={720} mt={5}>
         <Typography className={classes.primaryHeader} variant="h5">
-          Design faster, code easier
+          {t('primary_title')}
         </Typography>
         <Typography variant="body1" className={classes.secondaryHeader}>
-          Prototype quickly and turn mock-ups into a fully functional app with a complex set of UI elements
+          {t('secondary_title')}
         </Typography>
       </Box>
       <div className={classes.buttons}>
         <Button color="primary" size="large" variant="outlined">
-          Read the docs
+          {t('docs_button')}
         </Button>
         <Button color="primary" size="large" variant="contained">
-          Preview and download
+          {t('preview_button')}
         </Button>
       </div>
     </div>

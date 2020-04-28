@@ -7,8 +7,8 @@ import MoodIcon from '@material-ui/icons/MoodOutlined';
 import CodeIcon from '@material-ui/icons/CodeOutlined';
 import ViewModuleIcon from '@material-ui/icons/ViewModuleOutlined';
 import TuneIcon from '@material-ui/icons/TuneOutlined';
-import * as faker from 'faker';
 import Profit, { ProfitProps } from './profit';
+import { useTranslation } from '../hooks';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,45 +24,46 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const profits: ProfitProps[] = [
-  {
-    title: '3600+ Components',
-    description: faker.lorem.sentences(3),
-    icon: CategoryIcon,
-  },
-  {
-    title: '2400 Material Icons',
-    description: faker.lorem.sentences(3),
-    icon: MoodIcon,
-  },
-  {
-    title: '80 Styles',
-    description: faker.lorem.sentences(3),
-    icon: BrushIcon,
-  },
-  {
-    title: 'Development Ready',
-    description: faker.lorem.sentences(3),
-    icon: CodeIcon,
-  },
-  {
-    title: 'Modular',
-    description: faker.lorem.sentences(3),
-    icon: ViewModuleIcon,
-  },
-  {
-    title: 'Fully Customizable',
-    description: faker.lorem.sentences(3),
-    icon: TuneIcon,
-  },
-];
-
 const Profits = () => {
   const classes = useStyles();
+  const { t } = useTranslation('profits');
+
+  const profits: ProfitProps[] = [
+    {
+      title: t('components_label'),
+      description: t('components_description'),
+      icon: CategoryIcon,
+    },
+    {
+      title: t('icons_label'),
+      description: t('icons_description'),
+      icon: MoodIcon,
+    },
+    {
+      title: t('styles_label'),
+      description: t('styles_description'),
+      icon: BrushIcon,
+    },
+    {
+      title: t('development_label'),
+      description: t('development_description'),
+      icon: CodeIcon,
+    },
+    {
+      title: t('modular_label'),
+      description: t('modular_description'),
+      icon: ViewModuleIcon,
+    },
+    {
+      title: t('customizable_label'),
+      description: t('customizable_description'),
+      icon: TuneIcon,
+    },
+  ];
 
   return (
     <div className={classes.root}>
-      <Typography variant="h4">What you get?</Typography>
+      <Typography variant="h4">{t('heading')}</Typography>
       <div className={classes.content}>
         {profits.map((profit) => (
           <Profit key={profit.title} {...profit} />

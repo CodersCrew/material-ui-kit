@@ -1,3 +1,63 @@
 {
-  "Hello": "Cześć"
+  "navbar": {
+    "lang_en": "Angielski",
+    "lang_pl": "Polski",
+    "cta_button": "Pobierz UI Kit"
+  },
+  "heading": {
+    "figma": "Stworzone w Figmie",
+    "primary_title": "Projektuj szybciej, koduj prościej",
+    "secondary_title": "Usprawnij proces projektowania i z łatwością przekształcaj mockupy w działające aplikacje z kompletnym zestawem komponentów opartych o Material Design oraz bibliotekę Material UI.",
+    "docs_button": "Otwórz dokumentację",
+    "preview_button": "Pobierz UI Kit"
+  },
+  "profits": {
+    "heading": "What you get?",
+    "components_label": "Ponad 3600 komponentów",
+    "components_description": "Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.",
+    "icons_label": "2400 ikon",
+    "icons_description": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits.",
+    "styles_label": "80 lokalnych stylów",
+    "styles_description": "Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.",
+    "development_label": "Szybki development",
+    "development_description": "Dynamically innovate resource-leveling customer service for state of the art customer service. Objectively innovate empowered manufactured products whereas parallel platforms.",
+    "modular_label": "Modulerne komonenty",
+    "modular_description": "Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.",
+    "customizable_label": "Możliwość customizacji",
+    "customizable_description": "Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables."
+  },
+  "look-inside": {
+    "heading": "Zajrzyj do środka",
+    "guidelines_label": "Guidelines",
+    "guidelines_content": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.",
+    "components_label": "Components",
+    "components_content": "Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring to the table win-win survival strategies to ensure proactive domination.",
+    "frames_label": "Frames",
+    "frames_content": "At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time.",
+    "screens_label": "Screens",
+    "screens_content": "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps.",
+    "tabs_aria": "karty do wyboru wyświetlanej zawartości",
+    "go_to": "Przejdź do sekcji",
+    "prev_aria": "poprzednia sekcja",
+    "next_aria": "następna sekcja",
+    "menu_aria": "menu mini przeglądarki"
+  },
+  "footer": {
+    "madeby": "Stworzone z 💙 przez"
+  },
+  "contact": {
+    "heading": "Skontaktuj się z nami",
+    "question1": "Nie możesz znaleźć potrzebnego Ci komponentu?",
+    "question2": "Chcesz podzielić się z nami swoją opinią?",
+    "question3": "Napotkałeś problem lub masz pomysł na ulepszenie?",
+    "question4": "Masz jakiekolwiek pytanie dotyczące Material UI Kit?",
+    "form_title": "Użyj formularza poniżej, by się z nami skontaktować",
+    "email_field_label": "Adres e-mail",
+    "message_field_label": "Twoja wiadomość",
+    "submit_text": "Wyślij e-mail",
+    "validation_required": "To pole jest wymagane",
+    "validation_email": "Niepoprawny format adresu e-mail",
+    "success_message": "Twoja wiadomość została wysłana",
+    "error_message": "Błąd podczas wysyłania wiadomości"
+  }
 }

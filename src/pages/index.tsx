@@ -7,9 +7,11 @@ import Profits from '../components/profits';
 import LookInside from '../components/look-inside';
 import Contact from '../components/contact';
 import Footer from '../components/footer';
+import Navbar from '../components/navbar';
 
 const IndexPage = () => (
   <Layout>
+    <Navbar />
     <Heading />
     <Box mt={20}>
       <Profits />
