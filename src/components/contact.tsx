@@ -81,7 +81,7 @@ const Contact = () => {
     message: Yup.string().required(t('validation_required')),
   });
 
-  const { handleSubmit, control, errors } = useForm<FormValues>({ validationSchema, defaultValues });
+  const { handleSubmit, control, errors, reset } = useForm<FormValues>({ validationSchema, defaultValues });
 
   const onSubmit = async (values: FormValues) => {
     try {
@@ -89,6 +89,7 @@ const Contact = () => {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       });
       setSnackbar({ visible: true, message: t('success_message'), severity: 'success' });
+      reset();
     } catch {
       setSnackbar({ visible: true, message: t('error_message'), severity: 'error' });
     }
@@ -106,7 +107,15 @@ const Contact = () => {
         <p>{t('question4')}</p>
       </Typography>
       <Typography variant="subtitle2">{t('form_title')}</Typography>
-      <form className={classes.form} onSubmit={handleSubmit(onSubmit)}>
+      <form
+        className={classes.form}
+        onSubmit={handleSubmit(onSubmit)}
+        name="contact"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="title"
+      >
+        <input type="hidden" name="form-name" value="contact" />
         <Controller
           name="email"
           as={TextField}
@@ -126,6 +135,9 @@ const Contact = () => {
             ),
           }}
         />
+        <div hidden>
+          <input name="title" />
+        </div>
         <Controller
           name="message"
           as={TextField}

@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { Helmet } from 'react-helmet';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
@@ -20,6 +21,9 @@ const theme = createMuiTheme({
 const Layout: FC = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
+      <Helmet>
+        <title>Material UI Kit</title>
+      </Helmet>
       <CssBaseline />
       {children}
     </ThemeProvider>
