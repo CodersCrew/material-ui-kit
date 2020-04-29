@@ -17,6 +17,14 @@ const useStyles = makeStyles((theme) => ({
     height: 80,
     padding: `0 ${theme.spacing(5)}px`,
     backgroundColor: theme.palette.grey[900],
+
+    [theme.breakpoints.down('xs')]: {
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: 'unset',
+      padding: theme.spacing(2),
+    },
   },
   logo: {
     position: 'relative',
@@ -24,6 +32,11 @@ const useStyles = makeStyles((theme) => ({
     height: 20,
     width: 'auto',
     marginLeft: theme.spacing(2),
+
+    [theme.breakpoints.down('xs')]: {
+      height: 16,
+      marginLeft: theme.spacing(1),
+    },
   },
   socials: {
     display: 'flex',
@@ -47,6 +60,10 @@ const useStyles = makeStyles((theme) => ({
         height: 16,
         fill: 'currentColor',
       },
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      marginTop: theme.spacing(2),
     },
   },
 }));

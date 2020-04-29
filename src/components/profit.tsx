@@ -6,6 +6,13 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: 'left',
+
+    [theme.breakpoints.down('xs')]: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      textAlign: 'center',
+    },
   },
   iconWrapper: {
     display: 'flex',

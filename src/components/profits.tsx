@@ -12,7 +12,9 @@ import { useTranslation } from '../hooks';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 1120,
+    width: '100%',
+    maxWidth: 1200,
+    padding: `0 ${theme.spacing(3)}px`,
     margin: '0 auto',
     textAlign: 'center',
   },
@@ -20,7 +22,16 @@ const useStyles = makeStyles((theme) => ({
     display: 'grid',
     gridGap: `${theme.spacing(8)}px ${theme.spacing(10)}px`,
     gridTemplateColumns: 'repeat(3, 1fr)',
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(6),
+
+    [theme.breakpoints.down('sm')]: {
+      gridGap: `${theme.spacing(6)}px ${theme.spacing(8)}px`,
+      gridTemplateColumns: 'repeat(2, 1fr)',
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      gridTemplateColumns: 'repeat(1, 1fr)',
+    },
   },
 }));
 

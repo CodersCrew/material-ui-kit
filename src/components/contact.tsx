@@ -25,17 +25,28 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     margin: '0 auto',
     textAlign: 'center',
+    padding: `0 ${theme.spacing(3)}px`,
   },
   questions: {
-    marginTop: theme.spacing(3),
+    marginTop: theme.spacing(4),
     marginBottom: theme.spacing(4),
 
     '& > p': {
       margin: 0,
     },
+
+    [theme.breakpoints.down('xs')]: {
+      '& > p + p': {
+        marginTop: theme.spacing(0.5),
+      },
+    },
+  },
+  formTitle: {
+    fontWeight: theme.typography.fontWeightBold,
   },
   form: {
-    width: 400,
+    width: '100%',
+    maxWidth: 400,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -54,6 +65,7 @@ const useStyles = makeStyles((theme) => ({
 
     '& textarea': {
       paddingLeft: theme.spacing(4),
+      lineHeight: 1.3,
     },
   },
 }));
@@ -106,7 +118,9 @@ const Contact = () => {
         <p>{t('question3')}</p>
         <p>{t('question4')}</p>
       </Typography>
-      <Typography variant="subtitle2">{t('form_title')}</Typography>
+      <Typography className={classes.formTitle} variant="subtitle1">
+        {t('form_title')}
+      </Typography>
       <form
         className={classes.form}
         onSubmit={handleSubmit(onSubmit)}
@@ -148,7 +162,8 @@ const Contact = () => {
           className={classes.messageField}
           variant="outlined"
           multiline
-          rows="4"
+          rowsMax={12}
+          rows={4}
           error={!!errors.message}
           helperText={errors.message?.message || ' '}
           InputProps={{
@@ -163,7 +178,6 @@ const Contact = () => {
           {t('submit_text')}
         </Button>
       </form>
-
       <Snackbar
         open={snackbar.visible}
         autoHideDuration={5000}

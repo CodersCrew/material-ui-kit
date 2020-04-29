@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Box from '@material-ui/core/Box';
 
 import Layout from '../components/layout';
@@ -9,22 +9,24 @@ import Contact from '../components/contact';
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 
+const SectionBox: FC = ({ children }) => <Box mt={{ xs: 14, sm: 20 }}>{children}</Box>;
+
 const IndexPage = () => (
   <Layout>
     <Navbar />
     <Heading />
-    <Box mt={20}>
+    <SectionBox>
       <Profits />
-    </Box>
-    <Box mt={20}>
+    </SectionBox>
+    <SectionBox>
       <LookInside />
-    </Box>
-    <Box mt={20}>
+    </SectionBox>
+    <SectionBox>
       <Contact />
-    </Box>
-    <Box mt={20}>
+    </SectionBox>
+    <SectionBox>
       <Footer />
-    </Box>
+    </SectionBox>
   </Layout>
 );
 

@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import { Helmet } from 'react-helmet';
 import Typography from '@material-ui/core/Typography';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import Hidden from '@material-ui/core/Hidden';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Menu from '@material-ui/core/Menu';
@@ -13,7 +15,7 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIosOutlined';
 import RefreshIcon from '@material-ui/icons/Refresh';
 import HttpsIcon from '@material-ui/icons/Https';
 import MenuIcon from '@material-ui/icons/MenuOutlined';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import LinkIcon from '@material-ui/icons/LinkOutlined';
 import { useTranslation } from '../hooks';
 
@@ -29,9 +31,11 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     margin: '0 auto',
     textAlign: 'center',
+    padding: `0 ${theme.spacing(3)}px`,
   },
   tabs: {
     marginTop: theme.spacing(4),
+    maxWidth: '100%',
   },
   tab: {
     minWidth: 'unset',
@@ -42,12 +46,23 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(5),
   },
   browser: {
-    width: 960,
+    display: 'flex',
+    flexDirection: 'column',
+    width: '100%',
+    maxWidth: 960,
     height: 600,
     border: `1px solid ${theme.palette.grey[800]}`,
     marginTop: theme.spacing(5),
     borderRadius: 8,
     overflow: 'hidden',
+
+    [theme.breakpoints.down('sm')]: {
+      height: 560,
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      height: 520,
+    },
   },
   browserBar: {
     display: 'flex',
@@ -95,11 +110,16 @@ const useStyles = makeStyles((theme) => ({
   iframe: {
     border: 'none',
     backgroundColor: theme.palette.grey[300],
+    height: '100%',
+    width: '100%',
+    flex: 1,
   },
 }));
 
 const LookInside = () => {
   const classes = useStyles();
+  const theme = useTheme();
+  const isXs = useMediaQuery(theme.breakpoints.down('xs'));
   const { t } = useTranslation('look-inside');
   const [value, setValue] = React.useState(0);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -174,7 +194,14 @@ const LookInside = () => {
         ))}
       </Helmet>
       <Typography variant="h4">{t('heading')}</Typography>
-      <Tabs value={value} onChange={handleChange} className={classes.tabs} aria-label={t('tabs_aria')}>
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        className={classes.tabs}
+        aria-label={t('tabs_aria')}
+        variant={isXs ? 'scrollable' : 'standard'}
+        scrollButtons="on"
+      >
         {content.map(({ label, icon }, index) => (
           <Tab key={label} className={classes.tab} label={`${icon} ${label}`} {...a11yProps(index)} />
         ))}
@@ -186,6 +213,7 @@ const LookInside = () => {
         href={currentItem.url}
         target="__blank"
         variant="contained"
+        size={isXs ? 'small' : 'medium'}
         startIcon={<LinkIcon />}
       >
         {t('go_to')} {currentItem.label}
@@ -210,39 +238,34 @@ const LookInside = () => {
             <InputBase fullWidth value={`https://materialuikit.com/${currentItem.label.toLowerCase()}`} />
             <RefreshIcon className={classes.refreshIcon} onClick={refresh} />
           </div>
-          <IconButton
-            aria-label={t('menu_aria')}
-            aria-haspopup="true"
-            aria-controls="simple-menu"
-            color="inherit"
-            onClick={handleMenuOpen}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Menu
-            id="simple-menu"
-            anchorEl={anchorEl}
-            keepMounted
-            open={Boolean(anchorEl)}
-            onClose={handleMenuClose}
-            anchorOrigin={{ horizontal: 'right', vertical: 'top' }}
-            transformOrigin={{ horizontal: 'right', vertical: 'top' }}
-          >
-            {content.map((item, index) => (
-              <MenuItem key={item.label} onClick={handleMenuChoice(index)} disabled={index === value}>
-                {item.icon} {item.label}
-              </MenuItem>
-            ))}
-          </Menu>
+          <Hidden xsDown>
+            <IconButton
+              aria-label={t('menu_aria')}
+              aria-haspopup="true"
+              aria-controls="simple-menu"
+              color="inherit"
+              onClick={handleMenuOpen}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="simple-menu"
+              anchorEl={anchorEl}
+              keepMounted
+              open={Boolean(anchorEl)}
+              onClose={handleMenuClose}
+              anchorOrigin={{ horizontal: 'right', vertical: 'top' }}
+              transformOrigin={{ horizontal: 'right', vertical: 'top' }}
+            >
+              {content.map((item, index) => (
+                <MenuItem key={item.label} onClick={handleMenuChoice(index)} disabled={index === value}>
+                  {item.icon} {item.label}
+                </MenuItem>
+              ))}
+            </Menu>
+          </Hidden>
         </div>
-        <iframe
-          className={classes.iframe}
-          ref={iframeRef}
-          height={600 - 48}
-          width="100%"
-          allowFullScreen
-          src={currentItem.embedUrl}
-        />
+        <iframe className={classes.iframe} ref={iframeRef} allowFullScreen src={currentItem.embedUrl} />
       </div>
     </div>
   );

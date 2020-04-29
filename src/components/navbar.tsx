@@ -6,6 +6,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
+import Hidden from '@material-ui/core/Hidden';
 import MenuItem from '@material-ui/core/MenuItem';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import UIKitLogo from '../images/svg/ui-kit-logo-h.svg';
@@ -31,6 +32,10 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'flex-end',
     padding: `${theme.spacing(2)}px ${theme.spacing(3)}px`,
+
+    [theme.breakpoints.down('xs')]: {
+      padding: `${theme.spacing(1)}px ${theme.spacing(2)}px`,
+    },
   },
   actions: {},
   previewButton: {
@@ -99,9 +104,11 @@ const Navbar = () => {
         <UIKitLogo className={classes.logo} />
         <div className={classes.actions}>
           {language}
-          <Button className={classes.previewButton} color="secondary" variant="outlined">
-            {t('cta_button')}
-          </Button>
+          <Hidden xsDown>
+            <Button className={classes.previewButton} color="secondary" variant="outlined">
+              {t('cta_button')}
+            </Button>
+          </Hidden>
         </div>
       </Toolbar>
     </AppBar>
