@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     marginTop: theme.spacing(8),
 
-    '& > button + button': {
+    '& > a + a': {
       marginLeft: theme.spacing(1.5),
     },
 
@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
       flexDirection: 'column',
       marginTop: theme.spacing(4),
 
-      '& > button + button': {
+      '& > a + a': {
         marginLeft: 0,
         marginTop: theme.spacing(1.5),
       },
@@ -84,10 +84,26 @@ const Heading = () => {
         </Typography>
       </Box>
       <div className={classes.buttons}>
-        <Button color="primary" size="large" variant="outlined">
+        <Button
+          component="a"
+          href={t('docs_link')}
+          target="_blank"
+          rel="noreferrer noopener"
+          color="primary"
+          size="large"
+          variant="outlined"
+        >
           {t('docs_button')}
         </Button>
-        <Button color="primary" size="large" variant="contained">
+        <Button
+          component="a"
+          href="https://materialuikit.com/preview"
+          target="_blank"
+          rel="noreferrer noopener"
+          color="primary"
+          size="large"
+          variant="contained"
+        >
           {t('preview_button')}
         </Button>
       </div>

@@ -15,7 +15,8 @@
     "primary_title": "Complete set of Material UI Elements",
     "secondary_title": "Design faster, code easier. Prototype quickly and turn mock-ups into a fully functional app with a complex set of Material UI Elements.",
     "docs_button": "Read the docs",
-    "preview_button": "Download for free"
+    "preview_button": "Download for free",
+    "docs_link": "https://docs.materialuikit.com"
   },
   "profits": {
     "heading": "What you get?",

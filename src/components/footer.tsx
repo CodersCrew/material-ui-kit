@@ -76,16 +76,18 @@ const Footer = () => {
     <div className={classes.root}>
       <Box display="flex" alignItems="center" color="common.white">
         <Typography>{t('madeby')}</Typography>
-        <CodersCrewLogo className={classes.logo} />
+        <a className={classes.logo} href="https://coderscrew.pl/" target="_blank" rel="noreferrer noopener">
+          <CodersCrewLogo />
+        </a>
       </Box>
       <div className={classes.socials}>
-        <a href="#">
+        <a href="https://coderscrew.pl/" target="_blank" rel="noreferrer noopener">
           <WebsiteIcon />
         </a>
-        <a href="#">
+        <a href="https://www.facebook.com/ccrew18/" target="_blank" rel="noreferrer noopener">
           <FacebookIcon />
         </a>
-        <a href="#">
+        <a href="https://www.instagram.com/coderscrew.pl/" target="_blank" rel="noreferrer noopener">
           <InstagramIcon />
         </a>
       </div>

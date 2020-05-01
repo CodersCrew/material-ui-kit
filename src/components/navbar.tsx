@@ -105,7 +105,15 @@ const Navbar = () => {
         <div className={classes.actions}>
           {language}
           <Hidden xsDown>
-            <Button className={classes.previewButton} color="secondary" variant="outlined">
+            <Button
+              className={classes.previewButton}
+              component="a"
+              href="https://materialuikit.com/preview"
+              target="_blank"
+              rel="noreferrer noopener"
+              color="secondary"
+              variant="outlined"
+            >
               {t('cta_button')}
             </Button>
           </Hidden>

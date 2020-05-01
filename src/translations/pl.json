@@ -15,7 +15,8 @@
     "primary_title": "Projektuj szybciej, koduj prościej",
     "secondary_title": "Usprawnij proces projektowania i z łatwością przekształcaj mockupy w działające aplikacje z kompletnym zestawem komponentów opartych o Material Design oraz bibliotekę Material UI.",
     "docs_button": "Otwórz dokumentację",
-    "preview_button": "Pobierz UI Kit"
+    "preview_button": "Pobierz UI Kit",
+    "docs_link": "https://dokumentacja.materialuikit.com"
   },
   "profits": {
     "heading": "What you get?",
