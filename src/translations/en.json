@@ -6,10 +6,10 @@
   },
   "heading": {
     "figma": "Made for Figma",
-    "primary_title": "Design faster, code easier",
-    "secondary_title": "Prototype quickly and turn mock-ups into a fully functional app with a complex set of UI elements",
+    "primary_title": "Complete set of Material UI Elements",
+    "secondary_title": "Design faster, code easier. Prototype quickly and turn mock-ups into a fully functional app with a complex set of Material UI Elements.",
     "docs_button": "Read the docs",
-    "preview_button": "Preview and download"
+    "preview_button": "Download for free"
   },
   "profits": {
     "heading": "What you get?",
@@ -29,13 +29,13 @@
   "look-inside": {
     "heading": "Look inside",
     "guidelines_label": "Guidelines",
-    "guidelines_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras arcu arcu, dignissim quis egestas nec, molestie id diam. Praesent aliquet suscipit nulla sed hendrerit.",
+    "guidelines_content": "First, get tips on components, theme and design system.  There you will find elements that will speed up the work associated with creating a theme.",
     "components_label": "Components",
-    "components_content": "Cras purus arcu, ullamcorper at varius eu, dignissim a enim. Sed efficitur ex iaculis vestibulum lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+    "components_content": "Material UI Kit has over 3,600 components (simple, complex and group), 2,400 icons and 80 local styles that you can customize to your needs. You can change the color palette with one click.",
     "frames_label": "Frames",
-    "frames_content": "Vivamus ornare sodales leo, nec viverra enim sollicitudin ac. Nulla convallis pretium magna, quis eleifend elit convallis at. Curabitur quis nulla ac magna egestas elementum at et enim.",
+    "frames_content": "You will find many different variants and possibilities of using the components that make up the Material UI Kit. You can freely use examples in your project.",
     "screens_label": "Screens",
-    "screens_content": "Mauris efficitur convallis massa nec laoreet. Cras facilisis purus at rhoncus consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    "screens_content": "Are you looking for inspiration? See how you can use our set of UI components in specific layouts consistent with the Material Design style.",
     "tabs_aria": "content type choice tabs",
     "go_to": "Go to the",
     "prev_aria": "previous frame",

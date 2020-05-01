@@ -3,7 +3,7 @@ import Box from '@material-ui/core/Box';
 
 import Layout from '../components/layout';
 import Heading from '../components/heading';
-import Profits from '../components/profits';
+// import Profits from '../components/profits';
 import LookInside from '../components/look-inside';
 import Contact from '../components/contact';
 import Footer from '../components/footer';
@@ -15,9 +15,9 @@ const IndexPage = () => (
   <Layout>
     <Navbar />
     <Heading />
-    <SectionBox>
+    {/* <SectionBox>
       <Profits />
-    </SectionBox>
+    </SectionBox> */}
     <SectionBox>
       <LookInside />
     </SectionBox>

@@ -1,47 +1,50 @@
 /* eslint-disable @typescript-eslint/camelcase */
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: 'Material UI Kit - Complete set of Material UI Elements for Figma',
+    description:
+      'Design Material UI components faster using ready-made styles and assets. Customize everything with all elements and styles available for free.',
+    author: 'CodersCrew',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        name: 'Material UI Kit - Complete set of Material UI Elements for Figma',
+        description:
+          'Design Material UI components faster using ready-made styles and assets. Customize everything with all elements and styles available for free.',
+        short_name: 'Material UI Kit',
+        start_url: '/',
+        background_color: '#2196F3',
+        theme_color: '#2196F3',
+        display: 'minimal-ui',
+        icon: 'src/images/favicon-light.png',
       },
     },
     'gatsby-plugin-typescript',
     {
-      resolve: `gatsby-plugin-material-ui`,
+      resolve: 'gatsby-plugin-material-ui',
       options: {
         disableAutoprefixing: false,
         disableMinification: false,
       },
     },
     {
-      resolve: `gatsby-plugin-intl`,
+      resolve: 'gatsby-plugin-intl',
       options: {
         path: `${__dirname}/src/translations`,
-        languages: [`en`, `pl`],
-        defaultLanguage: `en`,
+        languages: ['en', 'pl'],
+        defaultLanguage: 'en',
       },
     },
     {
@@ -53,12 +56,13 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: [`Roboto:300,400,500,700`],
+        fonts: ['Roboto:300,400,500,700'],
         display: 'swap',
       },
     },
+    'gatsby-plugin-netlify',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
