@@ -21,36 +21,17 @@ const theme = createMuiTheme({
 });
 
 const Layout: FC = ({ children }) => {
-  const { locale } = useTranslation('navbar');
-
-  const helmet =
-    locale === 'pl' ? (
-      <Helmet>
-        <title>Material UI Kit - Kompletny zestaw elementów Material UI dla Figmy</title>
-        <meta name="description" content="Szybsze projektowanie komponentów dzięki gotowemu zestawowi zasobów. " />
-        <meta property="og:title" content="Material UI Kit - Kompletny zestaw elementów Material UI dla Figmy" />
-        <meta property="og:description" content="Projektuj szybciej dzięki darmowemu zestawowi edytowalnych zasobów " />
-        <meta property="og:image" content={openGraph} />
-      </Helmet>
-    ) : (
-      <Helmet>
-        <title>Material UI Kit - Complete set of Material UI Components for Figma</title>
-        <meta
-          name="description"
-          content="Design Material UI components faster using ready-made styles and assets. Customize everything with all elements and styles available for free."
-        />
-        <meta property="og:title" content="Material UI Kit - Complete set of Material UI Elements for Figma" />
-        <meta
-          property="og:description"
-          content="Design Material UI components faster using ready-made styles and assets."
-        />
-        <meta property="og:image" content={openGraph} />
-      </Helmet>
-    );
+  const { t } = useTranslation('layout');
 
   return (
     <ThemeProvider theme={theme}>
-      {helmet}
+      <Helmet>
+        <title>{t('title')}</title>
+        <meta name="description" content={t('description')} />
+        <meta property="og:title" content={t('og_title')} />
+        <meta property="og:description" content={t('og_description')} />
+        <meta property="og:image" content={openGraph} />
+      </Helmet>
       <CssBaseline />
       {children}
     </ThemeProvider>

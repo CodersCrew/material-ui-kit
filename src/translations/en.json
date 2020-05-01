@@ -1,4 +1,10 @@
 {
+  "layout": {
+    "title": "Material UI Kit - Complete set of Material UI Components for Figma",
+    "description": "Design Material UI components faster using ready-made styles and assets. Customize everything with all elements and styles available for free.",
+    "og_title": "Material UI Kit - Complete set of Material UI Elements for Figma",
+    "og_description": "Design Material UI components faster using ready-made styles and assets."
+  },
   "navbar": {
     "lang_en": "English",
     "lang_pl": "Polish",

@@ -1,4 +1,10 @@
 {
+  "layout": {
+    "title": "Material UI Kit - Kompletny zestaw elementów Material UI dla Figmy",
+    "description": "Szybsze projektowanie komponentów dzięki gotowemu zestawowi zasobów.",
+    "og_title": "Material UI Kit - Kompletny zestaw elementów Material UI dla Figmy",
+    "og_description": "Projektuj szybciej dzięki darmowemu zestawowi edytowalnych zasobów."
+  },
   "navbar": {
     "lang_en": "Angielski",
     "lang_pl": "Polski",
