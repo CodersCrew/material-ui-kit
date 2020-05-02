@@ -12,26 +12,35 @@
   },
   "heading": {
     "figma": "Made for Figma",
-    "primary_title": "Complete set of Material UI Elements",
-    "secondary_title": "Design faster, code easier. Prototype quickly and turn mock-ups into a fully functional app with a complex set of Material UI Elements.",
+    "primary_title": "Design Faster with all-in-one UI Kit",
+    "secondary_title": "Complete Set of Material UI styles, components, page layouts, icons and buttons. Create product designs with the Biggest Material UI Kit compliant with Material Design by Google.",
     "docs_button": "Read the docs",
     "preview_button": "Download for free",
     "docs_link": "https://docs.materialuikit.com"
   },
+  "inside": {
+    "heading": "What's inside?",
+    "item1_title": "Over 100 Local Styles",
+    "item1_description": "Set your style in seconds. Adapt your design with predefined colors, effects and text styles.",
+    "item2_title": "1500 Components",
+    "item2_description": "Save time and create fully-featured products with robust and customizable Material UI components for Figma. ",
+    "item3_title": "5360 Icons",
+    "item3_description": "Broad choice of icons grouped according to Material Design guidelines. Available in 5 styles."
+  },
   "profits": {
     "heading": "What you get?",
-    "components_label": "3600+ Components",
-    "components_description": "Aliquam est dolor, laoreet quis sodales ut, congue at velit. Praesent augue sapien, pellentesque ut lobortis nec, rhoncus vel ante. Curabitur eu dolor in urna ultricies dignissim.",
-    "icons_label": "2400 Material Icons",
-    "icons_description": "Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi non metus tellus. Mauris eget est a enim maximus suscipit. Vivamus placerat ipsum volutpat arcu mollis vehicula fermentum at nisi.",
-    "styles_label": "80 Styles",
-    "styles_description": "Aliquam nec nibh sem. Aliquam sagittis turpis ac tempus pharetra. Nunc egestas dignissim nunc non feugiat. Vestibulum bibendum arcu non lacus sagittis vehicula.",
-    "development_label": "Development Ready",
-    "development_description": "Morbi ac leo metus. In hac habitasse platea dictumst. Aliquam dignissim magna diam, a feugiat augue lobortis a. Maecenas ac enim interdum, pulvinar mi ut, sodales velit.",
-    "modular_label": "Modular",
-    "modular_description": "Quisque pellentesque faucibus dui et bibendum. Cras varius nunc ac ligula consectetur, sed fermentum sapien pharetra. Aliquam porttitor vehicula sapien.",
-    "customizable_label": "Fully Customizable",
-    "customizable_description": "Maecenas porta justo diam, nec finibus eros fermentum eget. Morbi at leo non magna egestas finibus. Sed blandit sollicitudin nibh, ac commodo justo eleifend sed."
+    "profit1_label": "All-in-one",
+    "profit1_description": "Material UI Kit includes all components described by the official Material Design guidelines and even more available in Material UI.",
+    "profit2_label": "Auto Layout",
+    "profit2_description": "Don’t waste your time on resizing elements as they adjust automatically. Spend less time working out the minute details, and more time focusing on the big picture.",
+    "profit3_label": "Pixel Perfect",
+    "profit3_description": "Every element of UI Kit is compliant with Material UI so developers can easily implement every detail you create.",
+    "profit4_label": "Customization",
+    "profit4_description": "Adapting Layers to your own brand and style is easy, and quick to do. Change fonts, colors and effects on the fly to whatever your project requires. ",
+    "profit5_label": "Collaborate",
+    "profit5_description": "Use Material UI Kit as a Team Library, and enable yourself and your Team to collaborate, and edit from a single source.",
+    "profit6_label": "Ready-to-use examples",
+    "profit6_description": "Get inspired how you can use our components with already built examples from Material UI Docs and entire app screens. "
   },
   "look-inside": {
     "heading": "Look inside",
@@ -48,6 +57,24 @@
     "prev_aria": "previous frame",
     "next_aria": "next frame",
     "menu_aria": "mini browser menu"
+  },
+  "for-who": {
+    "heading": "Many team roles, one UI Kit",
+    "person1": "UX Designers",
+    "person1_item1": "Wireframe with library of ready components.",
+    "person1_item2": "Deliver visually ready wireframes to avoid misunderstandings.",
+    "person1_item3": "Adjust global changes on every component that needs be changed.",
+    "person1_item4": "Build custom views from components all the way to complex layouts.",
+    "person2": "UI Designers",
+    "person2_item1": "Build your app on ready-made design system inspired by Material Design.",
+    "person2_item2": "Rely your product designs on pixel perfect Material UI components.",
+    "person2_item3": "Work with UX and Developers on 1:1 design match.",
+    "person2_item4": "Change styles in seconds with the cascade structure of the UI Kit.",
+    "person3": "Developers",
+    "person3_item1": "Build your app with the most popular React library.",
+    "person3_item2": "Reduce coding time by using components straight from Figma.",
+    "person3_item3": "Know how exactly your product will look like before first line of code.",
+    "person3_item4": "Minimize the number of misunderstandings with UX & UI Designers."
   },
   "footer": {
     "madeby": "Made with 💙 by"

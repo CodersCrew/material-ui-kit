@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
 import CodersCrewLogo from '../images/svg/coderscrew-logo.svg';
 import FacebookIcon from '../images/svg/facebook-f-brands.svg';
 import InstagramIcon from '../images/svg/instagram-brands.svg';
@@ -26,6 +25,16 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(2),
     },
   },
+  authors: {
+    display: 'flex',
+    alignItems: 'center',
+    color: theme.palette.common.white,
+
+    [theme.breakpoints.down('xs')]: {
+      flexDirection: 'column',
+      marginBottom: theme.spacing(2),
+    },
+  },
   logo: {
     position: 'relative',
     top: -2,
@@ -35,7 +44,8 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.down('xs')]: {
       height: 16,
-      marginLeft: theme.spacing(1),
+      marginLeft: theme.spacing(0),
+      marginTop: theme.spacing(1),
     },
   },
   socials: {
@@ -74,12 +84,12 @@ const Footer = () => {
 
   return (
     <div className={classes.root}>
-      <Box display="flex" alignItems="center" color="common.white">
+      <div className={classes.authors}>
         <Typography>{t('madeby')}</Typography>
         <a className={classes.logo} href="https://coderscrew.pl/" target="_blank" rel="noreferrer noopener">
           <CodersCrewLogo />
         </a>
-      </Box>
+      </div>
       <div className={classes.socials}>
         <a href="https://coderscrew.pl/" target="_blank" rel="noreferrer noopener">
           <WebsiteIcon />

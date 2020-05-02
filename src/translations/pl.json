@@ -12,27 +12,36 @@
   },
   "heading": {
     "figma": "Stworzone w Figmie",
-    "primary_title": "Projektuj szybciej, koduj prościej",
-    "secondary_title": "Usprawnij proces projektowania i z łatwością przekształcaj mockupy w działające aplikacje z kompletnym zestawem komponentów opartych o Material Design oraz bibliotekę Material UI.",
+    "primary_title": "Projektuj szybciej z kompletnym Material UI Kitem",
+    "secondary_title": "Kompleksowy zestaw stylów, komponentów, layoutów stron, ikon i przycisków bazujący na Material UI. Stwórz warstwę graficzną produktu, wykorzystując największy Material UI Kit zgodny z Material Design od Google.",
     "docs_button": "Otwórz dokumentację",
     "preview_button": "Pobierz UI Kit",
     "docs_link": "https://dokumentacja.materialuikit.com"
   },
-  "profits": {
-    "heading": "What you get?",
-    "components_label": "Ponad 3600 komponentów",
-    "components_description": "Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.",
-    "icons_label": "2400 ikon",
-    "icons_description": "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits.",
-    "styles_label": "80 lokalnych stylów",
-    "styles_description": "Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.",
-    "development_label": "Szybki development",
-    "development_description": "Dynamically innovate resource-leveling customer service for state of the art customer service. Objectively innovate empowered manufactured products whereas parallel platforms.",
-    "modular_label": "Modulerne komonenty",
-    "modular_description": "Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.",
-    "customizable_label": "Możliwość customizacji",
-    "customizable_description": "Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables."
+  "inside": {
+    "heading": "Oddajemy do Twojej dyspozycji",
+    "item1_title": "Ponad 100 lokalnych stylów",
+    "item1_description": "Personalizuj motyw w mgnieniu oka. Dopasuj predefiniowane style, zmieniając kolory, efekty i typografię.",
+    "item2_title": "1500 komponentów",
+    "item2_description": "Oszczędź czas i zyskaj na własność uporządkowaną bibliotekę prostych i złożonych komponentów Material UI.",
+    "item3_title": "5360 ikon",
+    "item3_description": "Szeroki wybór ikon pogrupowanych zgodnie z wytycznymi Material Design. Dostępne w aż 5 stylach."
   },
+  "profits": {
+    "heading": "Co otrzymujesz?",
+    "profit1_label": "Komplet elementów",
+    "profit1_description": "W Material UI Kit znajdziesz wszystkie elementy z najpopularniejszej biblioteki komponentów dla React.js.",
+    "profit2_label": "Auto layout",
+    "profit2_description": "Nigdy więcej nie przejmuj się ciągłym zmienianiem rozmiaru poszczególnych elementów. Poświęć mniej czasu na szczegóły i skieruj całą uwagę na produkt.",
+    "profit3_label": "Precyzja co do piksela",
+    "profit3_description": "Każdy element Kita powstał zgodnie z elementami Material UI. To, co zaprojektujesz, z łatwością zaimplementuje deweloper.",
+    "profit4_label": "Pełne dopasowanie",
+    "profit4_description": "W kilka chwil dostosujesz styl warstw pod własną markę. Zmieniaj kolory, efekty oraz fonty w dowolnej chwili.",
+    "profit5_label": "Efektywna współpraca",
+    "profit5_description": "Użyj Material UI Kit jako biblioteki zespołu. Współpracujcie i edytujcie z jednego źródła.",
+    "profit6_label": "Przykłady i inspiracje",
+    "profit6_description": "Zainspiruj się, w jaki sposób możesz wykorzystać nasze komponenty do tworzenia już zbudowanych przykładów w Material UI Docs oraz całych layoutów aplikacji."
+    },
   "look-inside": {
     "heading": "Zajrzyj do środka",
     "guidelines_label": "Guidelines",
@@ -48,6 +57,24 @@
     "prev_aria": "poprzednia sekcja",
     "next_aria": "następna sekcja",
     "menu_aria": "menu mini przeglądarki"
+  },
+  "for-who": {
+    "heading": "Wiele ról, jeden UI Kit",
+    "person1": "UX designerzy",
+    "person1_item1": "Twórz wireframe z gotowych komponentów.",
+    "person1_item2": "Unikaj nieporozumień, tworząc wireframe’y dopracowane pod względem wizualnym.",
+    "person1_item3": "Wprowadzaj zmiany globalnie – modyfikuj wszystkie komponenty, które chcesz.",
+    "person1_item4": "Twórz własne widoki od komponentów aż po złożone layouty.",
+    "person2": "UI designerzy",
+    "person2_item1": "Zbuduj swoją aplikację na gotowym design systemie opartym o Material Design.",
+    "person2_item2": "Twórz perfekcyjny design dzięki dbałości o każdy piksel.",
+    "person2_item3": "Współpracuj z UX designerami i programistami, odwzorowując design jeden do jednego.",
+    "person2_item4": "Dzięki komponentom kaskadowym zmienisz style w ciągu kilku sekund.",
+    "person3": "Deweloperzy",
+    "person3_item1": "Zbuduj swoją aplikację, używając najpopularniejszaj biblioteki komponentów w React.js.",
+    "person3_item2": "Skróć czas, który poświęcasz na kodowanie, używając komponentów prosto z Material UI",
+    "person3_item3": "Dowiedz się, jak Twój produkt będzie wyglądał przed napisaniem pierwszej linijki kodu.",
+    "person3_item4": "Zmniejsz liczbę nieporozumień i błędów w komunikacji z UI i UX designerem."
   },
   "footer": {
     "madeby": "Stworzone z 💙 przez"

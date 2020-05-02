@@ -1,12 +1,10 @@
-import React from 'react';
+import { useEffect } from 'react';
+import { navigate } from 'gatsby-plugin-intl';
 
-import Layout from '../components/layout';
+export default () => {
+  useEffect(() => {
+    navigate('/');
+  }, []);
 
-const NotFoundPage = () => (
-  <Layout>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-);
-
-export default NotFoundPage;
+  return null;
+};

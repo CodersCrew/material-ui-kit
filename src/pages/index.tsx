@@ -1,10 +1,13 @@
 import React, { FC } from 'react';
 import Box from '@material-ui/core/Box';
+import Hidden from '@material-ui/core/Hidden';
 
 import Layout from '../components/layout';
 import Heading from '../components/heading';
-// import Profits from '../components/profits';
+import Inside from '../components/inside';
+import Profits from '../components/profits';
 import LookInside from '../components/look-inside';
+import ForWho from '../components/for-who';
 import Contact from '../components/contact';
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
@@ -15,11 +18,19 @@ const IndexPage = () => (
   <Layout>
     <Navbar />
     <Heading />
-    {/* <SectionBox>
-      <Profits />
-    </SectionBox> */}
     <SectionBox>
-      <LookInside />
+      <Inside />
+    </SectionBox>
+    <SectionBox>
+      <Profits />
+    </SectionBox>
+    <Hidden xsDown>
+      <SectionBox>
+        <LookInside />
+      </SectionBox>
+    </Hidden>
+    <SectionBox>
+      <ForWho />
     </SectionBox>
     <SectionBox>
       <Contact />

@@ -1,19 +1,19 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import CategoryIcon from '@material-ui/icons/CategoryOutlined';
-import BrushIcon from '@material-ui/icons/BrushOutlined';
-import MoodIcon from '@material-ui/icons/MoodOutlined';
-import CodeIcon from '@material-ui/icons/CodeOutlined';
-import ViewModuleIcon from '@material-ui/icons/ViewModuleOutlined';
+import AllInclusiveIcon from '@material-ui/icons/AllInclusiveOutlined';
+import ViewAgendaIcon from '@material-ui/icons/ViewAgendaOutlined';
+import ImportantDevicesIcon from '@material-ui/icons/ImportantDevicesOutlined';
 import TuneIcon from '@material-ui/icons/TuneOutlined';
-import Profit, { ProfitProps } from './profit';
+import GroupAddIcon from '@material-ui/icons/GroupAddOutlined';
+import RemoveRedEyeIcon from '@material-ui/icons/RemoveRedEyeOutlined';
 import { useTranslation } from '../hooks';
+import Profit, { ProfitProps } from './profit';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    maxWidth: 1200,
+    maxWidth: 1400,
     padding: `0 ${theme.spacing(3)}px`,
     margin: '0 auto',
     textAlign: 'center',
@@ -41,34 +41,34 @@ const Profits = () => {
 
   const profits: ProfitProps[] = [
     {
-      title: t('components_label'),
-      description: t('components_description'),
-      icon: CategoryIcon,
+      title: t('profit1_label'),
+      description: t('profit1_description'),
+      icon: AllInclusiveIcon,
     },
     {
-      title: t('icons_label'),
-      description: t('icons_description'),
-      icon: MoodIcon,
+      title: t('profit2_label'),
+      description: t('profit2_description'),
+      icon: ViewAgendaIcon,
     },
     {
-      title: t('styles_label'),
-      description: t('styles_description'),
-      icon: BrushIcon,
+      title: t('profit3_label'),
+      description: t('profit3_description'),
+      icon: ImportantDevicesIcon,
     },
     {
-      title: t('development_label'),
-      description: t('development_description'),
-      icon: CodeIcon,
-    },
-    {
-      title: t('modular_label'),
-      description: t('modular_description'),
-      icon: ViewModuleIcon,
-    },
-    {
-      title: t('customizable_label'),
-      description: t('customizable_description'),
+      title: t('profit4_label'),
+      description: t('profit4_description'),
       icon: TuneIcon,
+    },
+    {
+      title: t('profit5_label'),
+      description: t('profit5_description'),
+      icon: GroupAddIcon,
+    },
+    {
+      title: t('profit6_label'),
+      description: t('profit6_description'),
+      icon: RemoveRedEyeIcon,
     },
   ];
 
