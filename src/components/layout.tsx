@@ -2,7 +2,8 @@ import React, { FC } from 'react';
 import { Helmet } from 'react-helmet';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import openGraph from '../images/og.png';
+import openGraphEN from '../images/opengraph-en.png';
+import openGraphPL from '../images/opengraph-pl.png';
 import { useTranslation } from '../hooks';
 
 const theme = createMuiTheme({
@@ -24,7 +25,9 @@ const theme = createMuiTheme({
 });
 
 const Layout: FC = ({ children }) => {
-  const { t } = useTranslation('layout');
+  const { t, locale } = useTranslation('layout');
+
+  const openGraph = locale === 'pl' ? openGraphPL : openGraphEN;
 
   return (
     <ThemeProvider theme={theme}>
