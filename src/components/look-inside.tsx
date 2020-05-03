@@ -155,28 +155,32 @@ const LookInside = () => {
       icon: '🎨',
       content: t('guidelines_content'),
       url: 'https://materialuikit.com/guidelines',
-      embedUrl: 'https://www.figma.com/file/lIe96jBlpUETU58efB7MAs/Material-UI-Kit-1.0.0?node-id=0%3A1',
+      embedUrl:
+        'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlIe96jBlpUETU58efB7MAs%2FMaterial-UI-Kit-1.0.0%3Fnode-id%3D0%253A1',
     },
     {
       label: t('components_label'),
       icon: '🗂',
       content: t('components_content'),
       url: 'https://materialuikit.com/components',
-      embedUrl: 'https://www.figma.com/file/lIe96jBlpUETU58efB7MAs/Material-UI-Kit-1.0.0?node-id=86%3A1437',
+      embedUrl:
+        'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlIe96jBlpUETU58efB7MAs%2FMaterial-UI-Kit-1.0.0%3Fnode-id%3D86%253A1437',
     },
     {
       label: t('frames_label'),
       icon: '🖼️',
       content: t('frames_content'),
       url: 'https://materialuikit.com/frames',
-      embedUrl: 'https://www.figma.com/file/lIe96jBlpUETU58efB7MAs/Material-UI-Kit-1.0.0?node-id=926%3A2141',
+      embedUrl:
+        'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlIe96jBlpUETU58efB7MAs%2FMaterial-UI-Kit-1.0.0%3Fnode-id%3D926%253A2141',
     },
     {
       label: t('screens_label'),
       icon: '🖥',
       content: t('screens_content'),
       url: 'https://materialuikit.com/screens',
-      embedUrl: 'https://www.figma.com/file/lIe96jBlpUETU58efB7MAs/Material-UI-Kit-1.0.0?node-id=692%3A0',
+      embedUrl:
+        'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlIe96jBlpUETU58efB7MAs%2FMaterial-UI-Kit-1.0.0%3Fnode-id%3D692%253A0',
     },
   ];
 
