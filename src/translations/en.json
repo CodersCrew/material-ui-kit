@@ -45,9 +45,9 @@
   "look-inside": {
     "heading": "Look inside",
     "guidelines_label": "Guidelines",
-    "guidelines_content": "First, get tips on components, theme and design system.  There you will find elements that will speed up the work associated with creating a theme.",
+    "guidelines_content": "First, get tips on components, theme and design system. There you will find elements that will speed up the work associated with creating a theme.",
     "components_label": "Components",
-    "components_content": "Material UI Kit has over 3,600 components (simple, complex and group), 2,400 icons and 80 local styles that you can customize to your needs. You can change the color palette with one click.",
+    "components_content": "Material UI Kit has over 1500 components (simple, complex and group), 5300 icons and 100 local styles that you can customize to your needs. You can change the color palette with one click.",
     "frames_label": "Frames",
     "frames_content": "You will find many different variants and possibilities of using the components that make up the Material UI Kit. You can freely use examples in your project.",
     "screens_label": "Screens",
