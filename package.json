@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "material-ui-kit",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Open-source UI Kit based on the Material Design. Contains all styles, icons, and components available in the Material UI library.",
+  "version": "1.0.2",
+  "author": "CodersCrew <kontakt@coderscrew.pl>",
   "dependencies": {
     "@material-ui/core": "^4.9.12",
     "@material-ui/icons": "^4.9.1",
@@ -46,7 +46,11 @@
     "typescript": "^3.8.3"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "ui-design",
+    "ui-kit",
+    "material-ui",
+    "material-design"
   ],
   "license": "MIT",
   "scripts": {
@@ -56,14 +60,13 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "typecheck": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/CodersCrew/material-ui-kit"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/CodersCrew/material-ui-kit/issues"
   }
 }
