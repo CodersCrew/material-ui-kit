@@ -156,7 +156,7 @@ const LookInside = () => {
       content: t('guidelines_content'),
       url: 'https://materialuikit.com/guidelines',
       embedUrl:
-        'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlIe96jBlpUETU58efB7MAs%2FMaterial-UI-Kit-1.0.0%3Fnode-id%3D0%253A1',
+        'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FbzvvHg0C74GgHOkzTLc0JM%2FMaterial-UI-Kit-1.0.2%3Fnode-id%3D0%253A1',
     },
     {
       label: t('components_label'),
@@ -164,7 +164,7 @@ const LookInside = () => {
       content: t('components_content'),
       url: 'https://materialuikit.com/components',
       embedUrl:
-        'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlIe96jBlpUETU58efB7MAs%2FMaterial-UI-Kit-1.0.0%3Fnode-id%3D86%253A1437',
+        'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FbzvvHg0C74GgHOkzTLc0JM%2FMaterial-UI-Kit-1.0.2%3Fnode-id%3D86%253A1437',
     },
     {
       label: t('frames_label'),
@@ -172,7 +172,7 @@ const LookInside = () => {
       content: t('frames_content'),
       url: 'https://materialuikit.com/frames',
       embedUrl:
-        'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlIe96jBlpUETU58efB7MAs%2FMaterial-UI-Kit-1.0.0%3Fnode-id%3D926%253A2141',
+        'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FbzvvHg0C74GgHOkzTLc0JM%2FMaterial-UI-Kit-1.0.2%3Fnode-id%3D926%253A2141',
     },
     {
       label: t('screens_label'),
@@ -180,7 +180,7 @@ const LookInside = () => {
       content: t('screens_content'),
       url: 'https://materialuikit.com/screens',
       embedUrl:
-        'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlIe96jBlpUETU58efB7MAs%2FMaterial-UI-Kit-1.0.0%3Fnode-id%3D692%253A0',
+        'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FbzvvHg0C74GgHOkzTLc0JM%2FMaterial-UI-Kit-1.0.2%3Fnode-id%3D692%253A0',
     },
   ];
 
